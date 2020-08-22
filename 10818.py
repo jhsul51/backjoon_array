@@ -1,4 +1,3 @@
 import sys
-n = int(input())
-a = list(map(int, sys.stdin.readline().split()))
-print("%d %d" %(min(a),max(a)))
+n, *a = map(int, sys.stdin.read().split())
+print(min(a), max(a))
